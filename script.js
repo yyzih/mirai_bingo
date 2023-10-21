@@ -7,4 +7,21 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = links[randomIndex];
     });
   });
-  
+
+<script>
+  function scaleBingoCard() {
+    const scaleWrapper = document.querySelector('.scale-wrapper');
+    const bingoContainer = document.querySelector('.bingo-container');
+
+    // 获取视口宽度
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    // 计算缩放比例
+    const scale = Math.min(1, viewportWidth / bingoContainer.offsetWidth);
+    // 应用缩放
+    scaleWrapper.style.transform = `scale(${scale})`;
+  }
+
+  // 当页面加载和窗口大小改变时调用函数
+  window.addEventListener('load', scaleBingoCard);
+  window.addEventListener('resize', scaleBingoCard);
+</script>
