@@ -42,6 +42,8 @@ body {
     border-radius: 15px;
     text-align: center;
     position: relative;
+    min-width: 50px;
+    min-height: 50px;
   }
   
   .bingo-cell::before {
