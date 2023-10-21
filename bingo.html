@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>橘美來ビンゴ</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="bingo-container">
-    <h1 class="bingo-title">橘美來ビンゴ朝も140一覧</h1>
-    <div class="bingo-card">
-      <a href="https://twitter.com/3rdMR_staff/status/1571620082878496770" class="bingo-cell" target="_blank"><div>秋服が好き</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1602060663655759878" class="bingo-cell" target="_blank"><div>デスクトップのPCを持っている</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1515812348589711362" class="bingo-cell" target="_blank"><div>目的もなく外を歩くことが好き</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1647721532788031488" class="bingo-cell" target="_blank"><div>人混みをかき分けて歩くのが得意</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1579230221747851268" class="bingo-cell" target="_blank"><div>ライブが好き</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1700992548603363567" class="bingo-cell" target="_blank"><div>親知らずを抜いたことがある</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1493344303715917830" class="bingo-cell" target="_blank"><div>人違いで知らない人に話しかけてしまったことがある</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1604597381965684736" class="bingo-cell" target="_blank"><div>天ぷらはサクサク派</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1548794808990572544" class="bingo-cell" target="_blank"><div>夏休みの終わり際にやっていない課題がいっぱい</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1576693513181347841" class="bingo-cell" target="_blank"><div>タピオカが好き</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1596987227594051584" class="bingo-cell" target="_blank"><div>インドア派</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1470513868136804353" class="bingo-cell" target="_blank"><div>暖房が苦手</div></a>
-      <a href="" class="bingo-cell" target="_blank" id="random-cell"><div>美來の朝も140からランダム1つ</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1528495925164969985" class="bingo-cell" target="_blank"><div>少食派</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1614744242127085568" class="bingo-cell" target="_blank"><div>セールに弱い</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1465440437284528135" class="bingo-cell" target="_blank"><div>パスタ好き</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1543716212110233602" class="bingo-cell" target="_blank"><div>お別れの挨拶は「またね」</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1558936539929137152" class="bingo-cell" target="_blank"><div>片付けるのが下手</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1541179496883073024" class="bingo-cell" target="_blank"><div>マイクアームを持っている</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1538642783279390720" class="bingo-cell" target="_blank"><div>タキシードサムが好き</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1551326362878754818" class="bingo-cell" target="_blank"><div>犬を飼っている</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1680698831715926016" class="bingo-cell" target="_blank"><div>ダイビングしたことがある</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1617280956519387139" class="bingo-cell" target="_blank"><div>国士無双を上がったことがある</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1574156795198771200" class="bingo-cell" target="_blank"><div>マイダーツを持っている</div></a>
-      <a href="https://twitter.com/3rdMR_staff/status/1478124008524627974" class="bingo-cell" target="_blank"><div>数学が得意な教科</div></a>
+<div class="scale-wrapper">
+    <div class="bingo-container">
+        <h1 class="bingo-title">橘美來ビンゴ朝も140一覧</h1>
+        <div class="bingo-card">
+            <a href="https://twitter.com/3rdMR_staff/status/1571620082878496770" class="bingo-cell" target="_blank">
+                <div>秋服が好き</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1602060663655759878" class="bingo-cell" target="_blank">
+                <div>デスクトップのPCを持っている</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1515812348589711362" class="bingo-cell" target="_blank">
+                <div>目的もなく外を歩くことが好き</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1647721532788031488" class="bingo-cell" target="_blank">
+                <div>人混みをかき分けて歩くのが得意</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1579230221747851268" class="bingo-cell" target="_blank">
+                <div>ライブが好き</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1700992548603363567" class="bingo-cell" target="_blank">
+                <div>親知らずを抜いたことがある</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1493344303715917830" class="bingo-cell" target="_blank">
+                <div>人違いで知らない人に話しかけてしまったことがある</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1604597381965684736" class="bingo-cell" target="_blank">
+                <div>天ぷらはサクサク派</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1548794808990572544" class="bingo-cell" target="_blank">
+                <div>夏休みの終わり際にやっていない課題がいっぱい</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1576693513181347841" class="bingo-cell" target="_blank">
+                <div>タピオカが好き</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1596987227594051584" class="bingo-cell" target="_blank">
+                <div>インドア派</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1470513868136804353" class="bingo-cell" target="_blank">
+                <div>暖房が苦手</div>
+            </a>
+            <a href="" class="bingo-cell" target="_blank" id="random-cell">
+                <div>美來の朝も140からランダム1つ</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1528495925164969985" class="bingo-cell" target="_blank">
+                <div>少食派</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1614744242127085568" class="bingo-cell" target="_blank">
+                <div>セールに弱い</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1465440437284528135" class="bingo-cell" target="_blank">
+                <div>パスタ好き</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1543716212110233602" class="bingo-cell" target="_blank">
+                <div>お別れの挨拶は「またね」</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1558936539929137152" class="bingo-cell" target="_blank">
+                <div>片付けるのが下手</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1541179496883073024" class="bingo-cell" target="_blank">
+                <div>マイクアームを持っている</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1538642783279390720" class="bingo-cell" target="_blank">
+                <div>タキシードサムが好き</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1551326362878754818" class="bingo-cell" target="_blank">
+                <div>犬を飼っている</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1680698831715926016" class="bingo-cell" target="_blank">
+                <div>ダイビングしたことがある</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1617280956519387139" class="bingo-cell" target="_blank">
+                <div>国士無双を上がったことがある</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1574156795198771200" class="bingo-cell" target="_blank">
+                <div>マイダーツを持っている</div>
+            </a>
+            <a href="https://twitter.com/3rdMR_staff/status/1478124008524627974" class="bingo-cell" target="_blank">
+                <div>数学が得意な教科</div>
+            </a>
+        </div>
     </div>
-  </div>
+</div>
 </body>
 </html>
