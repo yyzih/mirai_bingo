@@ -44,6 +44,7 @@ body {
     position: relative;
     min-width: 50px;
     min-height: 50px;
+    aspect-ratio: 1 / 1;
   }
   
   .bingo-cell::before {
