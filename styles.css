@@ -1,72 +1,73 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #87CEEB; /* 浅蓝色背景 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #87CEEB; /* 浅蓝色背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}  
 
 .bingo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 75vw;
-    max-width: 750px;
-    margin: auto;
-  }
-  
-  .bingo-title {
-    font-size: 2em;
-    text-align: center;
-    color: #6495ED;
-    margin-bottom: 20px;
-  }
-  
-  .bingo-card {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    width: 100%;
-  }
-  
-  .bingo-cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-    background-color: #6495ED;
-    border-radius: 15px;
-    text-align: center;
-    position: relative;
-    min-width: 50px;
-    min-height: 50px;
-    aspect-ratio: 1 / 1;
-  }
-  
-  .bingo-cell::before {
-    content: '';
-    float: left;
-    padding-top: 100%;
-  }
-  
-  .bingo-cell-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  justify-content: top;
+  width: 80vw;
+  max-width: 800px;
+  margin: auto;
+}
+
+.bingo-title {
+  font-size: 2em;
+  text-align: center;
+  color: #6495ED;
+  margin-bottom: 20px;
+  white-space:nowrap;
+}
+
+.bingo-card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.bingo-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: #6495ED;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  min-width: 80px;
+  min-height: 80px;
+}
+
+.bingo-cell::before {
+  content: '';
+  float: left;
+  padding-top: 100%;
+}
+
+.bingo-cell-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  box-sizing: border-box;
+  font-size: 1vw;
+}
 
 .scale-wrapper {
-  transform-origin: top left;
-  transition: transform 0.3s ease-in-out;
+transform-origin: top left;
+transition: transform 0.3s ease-in-out;
 }
